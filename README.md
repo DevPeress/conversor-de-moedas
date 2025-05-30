@@ -1,54 +1,69 @@
-# React + TypeScript + Vite
+# 💱 Conversor de Moedas
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Um simples conversor de moedas desenvolvido com HTML, CSS e JavaScript, utilizando a [API da ExchangeRate](https://www.exchangerate-api.com/) para fornecer taxas de câmbio em tempo real.
 
-Currently, two official plugins are available:
+## 📸 Preview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Adicione uma imagem chamada `preview.png` na raiz do projeto para visualizar o preview abaixo.
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+```md
+![preview](./preview.png)
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🚀 Funcionalidades
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- Conversão em tempo real entre diversas moedas
+- Interface limpa e responsiva
+- Atualização automática da taxa de câmbio
+- Feedback de carregamento ao buscar dados da API
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+## 🧪 Demonstração
+
+Você pode testar o projeto acessando: [https://devperess.github.io/conversor-de-moedas/](https://devperess.github.io/conversor-de-moedas/)
+
+## 🛠️ Tecnologias Utilizadas
+
+- HTML5
+- CSS3
+- JavaScript
+- [ExchangeRate API](https://www.exchangerate-api.com/)
+
+## 📦 Como usar localmente
+
+1. Clone este repositório:
+
+```bash
+git clone https://github.com/DevPeress/conversor-de-moedas.git
 ```
+
+2. Acesse a pasta do projeto:
+
+```bash
+cd conversor-de-moedas
+```
+
+3. Abra o arquivo `index.html` no seu navegador ou utilize uma extensão como **Live Server** no VS Code para facilitar o desenvolvimento.
+
+## 🧠 Aprendizados
+
+Este projeto foi uma oportunidade prática de:
+
+- Trabalhar com requisições `fetch` em JavaScript
+- Integrar uma API pública
+- Criar interfaces simples e funcionais
+
+## ✨ Contribuições
+
+Sinta-se à vontade para abrir issues ou enviar pull requests com melhorias ou correções. Toda ajuda é bem-vinda!
+
+## 📄 Licença
+
+Este projeto está sob a licença [MIT](LICENSE).
+
+---
+
+### 👨‍💻 Desenvolvido por [Peres](https://www.linkedin.com/in/devperes)
+
+[![GitHub](https://img.shields.io/badge/GitHub-xPeres-181717?style=for-the-badge&logo=github)](https://github.com/xPeres)
+[![Instagram](https://img.shields.io/badge/@fah.peres-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://instagram.com/fah.peres)
+[![Discord](https://img.shields.io/badge/PeresDev-5865F2?style=for-the-badge&logo=discord&logoColor=white)](#)
