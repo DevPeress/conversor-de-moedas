@@ -28,17 +28,25 @@ Você pode testar o projeto acessando: [https://conversor-de-moedas-indol.vercel
 
 1. Clone este repositório:
 
-```bash
-git clone https://github.com/DevPeress/conversor-de-moedas.git
-```
+  ```bash
+  git clone https://github.com/DevPeress/conversor-de-moedas.git
+  ```
 
-2. Acesse a pasta do projeto:
+2. Instale as dependências:
 
-```bash
-cd conversor-de-moedas
-```
+  ```bash
+  npm install
+  ```
 
-3. Abra o arquivo `index.html` no seu navegador ou utilize uma extensão como **Live Server** no VS Code para facilitar o desenvolvimento.
+3. Inicie o servidor de desenvolvimento:
+
+   ```bash
+   npm run dev
+   ```
+4. Abra o navegador e acesse:
+   ```markdown
+   http://localhost:5173
+   ```
 
 ## 🧠 Aprendizados
 
