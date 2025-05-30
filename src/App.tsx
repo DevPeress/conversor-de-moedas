@@ -87,7 +87,7 @@ function App() {
           {resultado ? (
             <>
               <h1 className='text-[#7D8DEC]'>1 {selecionada} = R$ {(parseFloat(resultado) / parseFloat(valor || "1")).toFixed(2)}</h1>
-              <h2 className='text-[6vw] md:text-[3vw] lg:text-[1.5vw] text-[#F1F2F6]'> {valor} {selecionada} = R$ {parseFloat(resultado).toFixed(2)}</h2>
+              <h2 className='text-[6vw] md:text-[3vw] lg:text-[1.5vw] text-[#F1F2F6]'> {valor} {selecionada} = R${parseFloat(resultado).toFixed(2)}</h2>
             </>
           ) : (
             <h1 className='text-[#7D8DEC]'>Informe um valor e converta</h1>
