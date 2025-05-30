@@ -1,6 +1,6 @@
 # 💱 Conversor de Moedas
 
-Um simples conversor de moedas desenvolvido com HTML, CSS e JavaScript, utilizando a [API da ExchangeRate](https://www.exchangerate-api.com/) para fornecer taxas de câmbio em tempo real.
+Um simples conversor de moedas desenvolvido em React com Tailwind CSS utilizando a [API da ExchangeRate](https://www.exchangerate-api.com/) para fornecer taxas de câmbio em tempo real.
 
 ## 📸 Preview
 
