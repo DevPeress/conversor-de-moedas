@@ -15,7 +15,7 @@ Um simples conversor de moedas desenvolvido com HTML, CSS e JavaScript, utilizan
 
 ## 🧪 Demonstração
 
-Você pode testar o projeto acessando: [https://conversor-de-moedas-indol.vercel.app/]([https://devperess.github.io/conversor-de-moedas/](https://conversor-de-moedas-indol.vercel.app))
+Você pode testar o projeto acessando: [https://conversor-de-moedas-indol.vercel.app/]([https://devperess.github.io/conversor-de-moedas/](https://conversor-de-moedas-indol.vercel.app)
 
 ## 🛠️ Tecnologias Utilizadas
 
