@@ -24,26 +24,28 @@ Você pode testar o projeto acessando: [https://conversor-de-moedas-indol.vercel
 - JavaScript
 - [ExchangeRate API](https://www.exchangerate-api.com/)
 
-## 📦 Como usar localmente
+## ⚙️ Instalação e Execução Local
+
+Para rodar o projeto localmente, siga os passos abaixo:
 
 1. Clone este repositório:
 
-  ```bash
-  git clone https://github.com/DevPeress/conversor-de-moedas.git
-  ```
-
+   ```bash
+   git clone https://github.com/DevPeress/Calculadora.git
+   cd Calculadora
+   ```
 2. Instale as dependências:
 
-  ```bash
-  npm install
-  ```
-
+   ```bash
+   npm install
+   ```
 3. Inicie o servidor de desenvolvimento:
 
    ```bash
    npm run dev
    ```
-4. Abra o navegador e acesse:
+4. Abra o navegador e acesse: 
+
    ```markdown
    http://localhost:5173
    ```
