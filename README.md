@@ -4,8 +4,6 @@ Um simples conversor de moedas desenvolvido com HTML, CSS e JavaScript, utilizan
 
 ## 📸 Preview
 
-Adicione uma imagem chamada `preview.png` na raiz do projeto para visualizar o preview abaixo.
-
 ```md
 ![preview](./preview.png)
 ```
