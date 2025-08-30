@@ -3,24 +3,9 @@ import logo from './assets/logo.svg'
 
 function App() {
   const [moedas, setMoedas] = useState<{ [key: string]: string }>({})
-  const [selecionada, setSelecionada] = useState("")
-  const [valor, setValor] = useState("")
+  const [selecionada, setSelecionada] = useState<string>("")
+  const [valor, setValor] = useState<string>("")
   const [resultado, setResultado] = useState<string | null>(null)
-
-  useEffect(() => {
-    fetch("https://api.currencylayer.com/list?access_key=1fd8edf46a62dd3687109c323a7a361a")
-      .then((res) => res.json())
-      .then((data) => {
-        if (data && data.currencies) {
-          setMoedas(data.currencies)
-          const primeiraMoeda = Object.keys(data.currencies)[0]
-          setSelecionada(primeiraMoeda)
-        } 
-      })
-      .catch((error) => {
-        console.error("Erro ao buscar moedas:", error)
-      })
-  }, [])
 
   const converter = () => {
     if (!selecionada || !valor) return
@@ -28,12 +13,12 @@ function App() {
     fetch(`https://api.currencylayer.com/live?access_key=1fd8edf46a62dd3687109c323a7a361a&currencies=BRL&source=${selecionada}`)
       .then((res) => res.json())
       .then((data) => {
-        const quoteKey = selecionada + "BRL"
+        const quoteKey: string = selecionada + "BRL"
         const cotacao = data.quotes ? data.quotes[quoteKey] : null
 
         if (cotacao) {
-          const valorNum = parseFloat(valor)
-          const valorConvertido = valorNum * cotacao
+          const valorNum: number = parseFloat(valor)
+          const valorConvertido: number = valorNum * cotacao
           setResultado(valorConvertido.toFixed(2))
         } else {
           setResultado(null)
@@ -60,6 +45,21 @@ function App() {
       setValor(inteiros + "," + decimais)
     }
   }
+
+  useEffect(() => {
+    fetch("https://api.currencylayer.com/list?access_key=1fd8edf46a62dd3687109c323a7a361a")
+      .then((res) => res.json())
+      .then((data) => {
+        if (data && data.currencies) {
+          setMoedas(data.currencies)
+          const primeiraMoeda = Object.keys(data.currencies)[0]
+          setSelecionada(primeiraMoeda)
+        } 
+      })
+      .catch((error) => {
+        console.error("Erro ao buscar moedas:", error)
+      })
+  }, [])
 
   return (
     <>
